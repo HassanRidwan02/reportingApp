@@ -109,7 +109,7 @@ export default function ItemDetails() {
                     <img
                     src={item.image}
                     alt={item.title}
-                    className="h-[240px] w-full object-cover sm:h-[320px] lg:h-[410px]"
+                    className="h-[220px] w-[90%] object-cover sm:h-[320px] lg:h-[410px]"
                     />
                 ) : (
                     <div className="flex h-[240px] items-center justify-center bg-blue-50 sm:h-[320px] lg:h-[410px]">
