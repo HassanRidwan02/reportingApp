@@ -105,18 +105,20 @@ export default function ItemDetails() {
           <div className="space-y-5">
             {/* Main image */}
             <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
-              {item.image ? (
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-[410px] w-full object-cover"
-                />
-              ) : (
-                <div className="flex h-[410px] items-center justify-center bg-blue-50">
-                  <span className="text-7xl">{item.icon ?? "📦"}</span>
+                {item.image ? (
+                    <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-[240px] w-full object-cover sm:h-[320px] lg:h-[410px]"
+                    />
+                ) : (
+                    <div className="flex h-[240px] items-center justify-center bg-blue-50 sm:h-[320px] lg:h-[410px]">
+                    <span className="text-5xl sm:text-6xl lg:text-7xl">
+                        {item.icon ?? "📦"}
+                    </span>
+                    </div>
+                )}
                 </div>
-              )}
-            </div>
 
             {/* Description */}
             <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
