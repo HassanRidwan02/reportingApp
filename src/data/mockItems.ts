@@ -1,0 +1,34 @@
+import type { Item } from "../types/item";
+
+export const recentItems: Item[] = [
+  {
+    id: "1",
+    title: "Sony wireless headphones",
+    category: "Electronics",
+    location: "Library, Level 2",
+    status: "found",
+    date: "Today",
+    image:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "2",
+    title: "Silver Hydro Flask",
+    category: "Personal items",
+    location: "Science Quad",
+    status: "lost",
+    date: "Yesterday",
+    image:
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "3",
+    title: "Navy canvas backpack",
+    category: "Bags",
+    location: "Student Union",
+    status: "found",
+    date: "Sep 18",
+    image:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=80",
+  },
+];
