@@ -104,16 +104,16 @@ export default function ItemDetails() {
           {/* LEFT COLUMN */}
           <div className="space-y-5">
             {/* Main image */}
-            <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+            <div className="mx-auto w-full max-w-[700px] overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                 {item.image ? (
                     <img
                     src={item.image}
                     alt={item.title}
-                    className="h-[220px] w-[90%] object-cover sm:h-[320px] lg:h-[410px]"
+                    className="h-auto w-full object-cover"
                     />
                 ) : (
-                    <div className="flex h-[240px] items-center justify-center bg-blue-50 sm:h-[320px] lg:h-[410px]">
-                    <span className="text-5xl sm:text-6xl lg:text-7xl">
+                    <div className="flex min-h-[240px] items-center justify-center bg-blue-50">
+                    <span className="text-5xl">
                         {item.icon ?? "📦"}
                     </span>
                     </div>
